@@ -1,0 +1,19 @@
+div {
+  position: fixed;
+  width: 100%;
+  bottom: 10px;
+  text-align: center;
+}
+
+p {
+  font-family: "Courier New", "Courier New", monospace;
+  background-color: #000000;
+  color: #fff;
+}
+
+a:link, a:visited {
+  font-family: "Courier New", "Courier New", monospace;
+  background-color: #000000;
+  color: #fff;
+  text-decoration: none;
+}
