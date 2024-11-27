@@ -1,6 +1,6 @@
-let gap;
-let diameter;
-let circleNum;
+let gap = 10;
+let diameter = 20;
+let circleNum = 60;
 let pointNum = 150;
 let angle = 45;
 
@@ -20,16 +20,6 @@ function draw() {
   noStroke();
   fill(255);
   circle(mouseX, mouseY, 5);
-  
-  if (windowWidth < 600) {
-    diameter = 10;
-    circleNum = 50;
-    gap = 5;
-  } else {
-    diameter = 20;
-    circleNum = 60;
-    gap = 10;
-  }
   
   // Shape
   push();
@@ -96,18 +86,10 @@ function draw() {
   translate(width/2, 90);
   noStroke();
   textFont('Courier New');
-  if (windowWidth < 600) {
-    textSize(60);
-  } else {
-    textSize(80);
-  }
+  textSize(80);
   textAlign(CENTER, CENTER);
   text('artaxia', 0, 0);
-  if (windowWidth < 600) {
-    textSize(12);
-  } else {
-    textSize(18);
-  }
+  textSize(18);
   text('Because not all Kangaroos are Astronauts...', 0, 60)
   
   pop();
